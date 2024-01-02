@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  vertical-align: middle;
+}
+
+body {
+  font-size: 14px;
+  font-family: arial, "sans-serif";
+  background: #f9f9f4 url(../../assets/img/img-fundo.png) no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.quadro {
+  width: 601px;
+  height: 428px;
+  background: #f9f9fb;
+  border-radius: 8px; /*arredonda os cantos*/
+  border: solid 3px #e1e1e3;
+  margin: 100px auto;
+  padding: 40px 80px;
+  box-shadow: 0 3px 17px 0px #d4d4d4;
+  position: relative;
+  float: right;
+  margin-right: 110px;
+}
+
+.quadro label {
+  display: block;
+  padding: 8px 0;
+}
+.quadro label span {
+  color: #646568;
+  font-size: 15px;
+  border: 0;
+  margin-right: 7px;
+  display: block;
+  padding-bottom: 5px;
+}
+.quadro .col {
+  width: 48%;
+  float: left;
+}
+.quadro .col:nth-of-type(2n + 0) {
+  /*nth-of-type condicional para dar espaçamento no objeto*/
+  float: right;
+}
+
+.quadro label input {
+  width: 100%;
+  font-size: 20px;
+  background: #fff;
+  border: solid 1px #d8d8da;
+  padding: 8px;
+}
+
+.quadro .btn {
+  padding: 14px 25px;
+  border: solid 2px #96abb9;
+  background: url(../../assets/img/img-btn.png) repeat;
+  color: #6d818e;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+.quadro h3 {
+  display: block;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #546d7d;
+  text-transform: uppercase;
+}
+
+.resultado {
+  position: absolute;
+  top: 75px;
+  right: 590px;
+  width: 325px;
+  background: #abc0d6;
+  padding: 30px;
+  border-radius: 8px 0 0 8px;
+  box-shadow: 0 4px 8px 0 #b1b1b1;
+  z-index: -1;
+}
+
+.resultado h3 {
+  text-transform: uppercase;
+  color: #1f2f40;
+}
+.resultado p {
+  text-transform: uppercase;
+  padding: 7px 0;
+  color: #2d4865;
+}

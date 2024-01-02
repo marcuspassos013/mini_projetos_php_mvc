@@ -1,0 +1,124 @@
+*{
+/*pequeno reset*/
+margin: 0;
+padding: 0;
+-o-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+vertical-align: middle;
+}
+
+body{
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  background: #cecec6;
+}
+.calendario{
+  width: 480px;
+  height: 400px;
+  background: #fffdf4;
+  margin: 80px auto ;
+  position: relative;
+  border: solid 1px #babaab;
+  transform: skewX(-5deg);
+}
+
+.calendario:before {
+  content:"";
+  border: solid 20px transparent;
+  border-left: solid 60px #9b9b8c;
+  border-top: solid 6px #9b9b8c;
+  position: absolute;
+  right: -80px;
+  bottom: 0;
+}
+
+.calendario:after {
+  content:"";
+  border: solid 67px transparent;
+  border-left: solid 13px #babaab;
+  border-bottom: solid 307px #babaab;
+  position: absolute;
+  right: -80px;
+  top: 0;
+  z-index: -1;
+}
+
+.calendario label{
+  width: 145px;
+  border: solid 1px #cbcbc0;
+  float: left;
+  padding: 20px 10px;
+}
+
+.calendario label small{
+  display: block;
+  text-align: right;
+  color: #aaa;
+  text-transform: uppercase;
+}
+
+.calendario label input{
+  width: 100%;
+  padding: 5px 0;
+  border: 0;
+  text-align: right;
+  font-size: 45px;
+  background: #fffdf4;
+  color: #d82363;
+}
+
+.resultado{
+  width: 290px;
+  border: solid 1px #cbcbd0;
+  border-top: 0;
+  float: left;
+  padding: 20px 10px;
+  height: 102px;
+}
+
+.resultado small{
+  display: block;
+  text-align: right;
+  color: #aaa;
+  text-transform: uppercase;
+}
+
+.calendario h2{
+  display: block;
+  text-align: center;
+  color: #fff;
+  background: #aa1c4e;
+  text-transform: uppercase;
+  padding: 15px;
+}
+
+.calendario form{
+  display: block;
+  padding: 20px;
+}
+
+.calendario .btn{
+  width: 145px;
+  padding: 0;
+  height: 102px;
+  border: solid 1px #ea2239;
+  float: left;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  background-image: linear-gradient(to bottom, #ec1313 15%, #ff0f0f 53%, #e01010 90%);
+  text-shadow: 0 3px 3px #000;
+  cursor: pointer;
+}
+
+
+.resultado p{
+  display: block;
+  text-align: right;
+  color: #d82363;
+  text-transform: uppercase;
+  font-size: 45px;
+}
