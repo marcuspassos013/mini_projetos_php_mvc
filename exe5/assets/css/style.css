@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+body {
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  background: url(../img/img-fundo.png) no-repeat;
+  background-size: cover;
+}
+h1 {
+  text-align: center;
+  padding: 10px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.termometro {
+  width: 430px;
+  height: 170px;
+  margin: 80px auto;
+  background: linear-gradient(
+    #d2d3d5,
+    #fafafa
+  ); /*Aqui usei um gradient que é começa com uma cor s termina com outra*/
+  padding: 20px 50px;
+  border-radius: 100px;
+  border: solid 2px #abb0b4;
+  box-shadow: inset 0 2px 4px 0 #fff; /*Aqui uma sombra interna na cor branco pra dar um efeito chamfrado*/
+  position: relative;
+}
+.termometro:before {
+  content: url(../img/img-reflexo.png);
+  position: absolute;
+  bottom: -64px;
+  left: 0;
+  z-index: -1;
+}
+.termometro label {
+  display: block;
+  /*Veja, que aqui usei dois background com imagens, separados por virgula*/
+  background: url(../img/img-fahrenheit.png) repeat-x top,
+    url(../img/img-fahrenheit2.png) repeat-x bottom;
+  padding: 20px 0;
+  margin: 5px 0;
+}
+.termometro label input {
+  width: 100%;
+  background: url(../img/back-input.png) repeat center;
+  padding: 7px 20px;
+  border-radius: 40px 40px;
+  border: 0;
+  box-shadow: inset 0 1px 0 0 #5e6366, inset 0 -1px 0 0 #fff; /*Aqui usei duas sombra interna uma na cor escura (em cima) e a outra na cor escura (em baixo)*/
+  font-size: 18px;
+}
+.termometro label small {
+  display: block;
+  text-transform: uppercase;
+  padding-left: 30px;
+  padding-bottom: 5px;
+  color: #444;
+}
+.termometro span {
+  display: block;
+  text-transform: uppercase;
+  padding-left: 10px;
+  color: #868686;
+}
+.termometro b {
+  font-size: 16px;
+  color: #000;
+}
+.termometro .btn {
+  position: absolute;
+  right: 45px;
+  background: url(../img/back-btn.png) repeat center;
+  top: 63.5px;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 0 40px 40px 0;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 1px 1px #000;
+  box-shadow: inset 0 1px 0 0 #5e6366, inset 0 -1px 0 0 #fff; /*Aqui usei duas sombra interna uma na cor escura (em cima) e a outra na cor escura (em baixo)*/
+}
+
+.termometro label input::-webkit-input-placeholder {
+  font-size: 18px;
+}
